@@ -11,7 +11,7 @@ function G = configuration_goodness(rbm_w, visible_state, hidden_state)
 
     % You need to do what you did earlier but for each individual case. 
     % Then you need to take the mean.
-    G = 0 
+    G = 0;
     for i = 1:size(visible_state,2)
       G = G + ((rbm_w * visible_state(:,i))' * hidden_state(:,i));
     end
